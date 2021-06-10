@@ -10,12 +10,12 @@
     <task-event-listeners/>
     <globals/>
     <work-item-handlers>
-      <work-item-handler>
-        <resolver>mvel</resolver>
-        <identifier>new org.redhat.MyCustomDMNHandler(classLoader,"com.redhat","test-dmn","1.0.0-SNAPSHOT")</identifier>
-        <parameters/>
-        <name>DecisionTask</name>
-      </work-item-handler>    
+        <work-item-handler>
+            <resolver>mvel</resolver>
+            <identifier>new org.redhat.MyCustomDMNHandler(classLoader,"com.redhat","test-dmn","1.0.0-SNAPSHOT")</identifier>
+            <parameters/>
+            <name>DecisionTask</name>
+        </work-item-handler>
     </work-item-handlers>
     <environment-entries/>
     <configurations/>
