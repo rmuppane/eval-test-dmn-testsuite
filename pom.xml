@@ -91,6 +91,7 @@
       <groupId>org.example</groupId>
       <artifactId>dmn-handler</artifactId>
       <version>1.0-SNAPSHOT</version>
+      <scope>compile</scope>
     </dependency>
   </dependencies>
   <build>
