@@ -7,29 +7,49 @@ package com.redhat;
 @javax.persistence.Entity
 public class FinalDecision implements java.io.Serializable {
 
-    static final long serialVersionUID = 1L;
+	static final long serialVersionUID = 1L;
 
-    @javax.persistence.GeneratedValue(generator = "FINALDECISION_ID_GENERATOR", strategy = javax.persistence.GenerationType.AUTO)
-    @javax.persistence.Id
-    @javax.persistence.SequenceGenerator(name = "FINALDECISION_ID_GENERATOR", sequenceName = "FINALDECISION_ID_SEQ")
-    private java.lang.Long id;
+	@javax.persistence.GeneratedValue(generator = "FINALDECISION_ID_GENERATOR", strategy = javax.persistence.GenerationType.AUTO)
+	@javax.persistence.Id
+	@javax.persistence.SequenceGenerator(name = "FINALDECISION_ID_GENERATOR", sequenceName = "FINALDECISION_ID_SEQ")
+	private java.lang.Long id;
 
-    public FinalDecision() {
-    }
-    
-    public FinalDecision(java.lang.Long id) {
-        this.id = id;
-    }
+	private java.lang.Long processInstanceId;
 
-    public java.lang.Long getId() {
-        return this.id;
-    }
-    
-    public void setId(java.lang.Long id) {
-        this.id = id;
-    }
+	private java.lang.String json;
 
+	public FinalDecision() {
+	}
 
+	public java.lang.Long getId() {
+		return this.id;
+	}
 
+	public void setId(java.lang.Long id) {
+		this.id = id;
+	}
+
+	public java.lang.Long getProcessInstanceId() {
+		return this.processInstanceId;
+	}
+
+	public void setProcessInstanceId(java.lang.Long processInstanceId) {
+		this.processInstanceId = processInstanceId;
+	}
+
+	public java.lang.String getJson() {
+		return this.json;
+	}
+
+	public void setJson(java.lang.String json) {
+		this.json = json;
+	}
+
+	public FinalDecision(java.lang.Long id, java.lang.Long processInstanceId,
+			java.lang.String json) {
+		this.id = id;
+		this.processInstanceId = processInstanceId;
+		this.json = json;
+	}
 
 }
