@@ -7,13 +7,7 @@
     <runtime-strategy>PER_PROCESS_INSTANCE</runtime-strategy>
     <marshalling-strategies/>
     <event-listeners/>
-    <task-event-listeners>
-        <task-event-listener>
-            <resolver>mvel</resolver>
-            <identifier>new com.redhat.internal.custom.TaskLevelErrorPathSetting()</identifier>
-            <parameters/>
-        </task-event-listener>
-    </task-event-listeners>
+    <task-event-listeners/>
     <globals/>
     <work-item-handlers>
         <work-item-handler>
