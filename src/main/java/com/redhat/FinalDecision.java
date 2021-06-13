@@ -14,6 +14,10 @@ public class FinalDecision implements java.io.Serializable {
 	@javax.persistence.SequenceGenerator(sequenceName = "FINALDECISION_ID_SEQ", name = "FINALDECISION_ID_GENERATOR")
 	private java.lang.Long id;
 
+	private java.lang.Long processInstanceId;
+
+	private java.lang.String json;
+
 	public FinalDecision() {
 	}
 
@@ -25,8 +29,27 @@ public class FinalDecision implements java.io.Serializable {
 		this.id = id;
 	}
 
-	public FinalDecision(java.lang.Long id) {
+	public java.lang.Long getProcessInstanceId() {
+		return this.processInstanceId;
+	}
+
+	public void setProcessInstanceId(java.lang.Long processInstanceId) {
+		this.processInstanceId = processInstanceId;
+	}
+
+	public java.lang.String getJson() {
+		return this.json;
+	}
+
+	public void setJson(java.lang.String json) {
+		this.json = json;
+	}
+
+	public FinalDecision(java.lang.Long id, java.lang.Long processInstanceId,
+			java.lang.String json) {
 		this.id = id;
+		this.processInstanceId = processInstanceId;
+		this.json = json;
 	}
 
 }
